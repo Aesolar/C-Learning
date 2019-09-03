@@ -3,6 +3,8 @@
 int main() {
   
 	double height, weight, bmi;
+
+  auto weightInput, heightInput;
   
   // Ask a user if they use pounds or kilograms
   
@@ -12,7 +14,7 @@ int main() {
 
   // -- Lbs Version
 
-	if (weightInput.toLowerCase() == "p" || "pounds" || "lbs") {
+	if (weightInput == "p" || "pounds" || "lbs") {
         std::cout << "Enter in your weight (lbs):\n";
         std::cin >> weight;
     
@@ -23,7 +25,7 @@ int main() {
     
         // Ft Version
 
-        if (heightInput.toLowerCase() == ("f" || "feet" || "ft")) {
+        if (heightInput == "f" || "feet" || "ft") {
       
             std::cout << "Enter in your height (ft):\n";
             std::cin >> height;
@@ -35,7 +37,7 @@ int main() {
 
          // M Version
 
-         } else if (heightInput.toLowerCase() == ("m" || "metres" || "meters")) {
+         } else if (heightInput == "m" || "metres" || "meters") {
                
                     std::cout << "Enter in your height (m):\n";
                     std::cin >> height;
@@ -52,16 +54,16 @@ int main() {
     
   // -- Kg Version
 
-  } else if (weightInput.toLowerCase() == ("kg" || "kilograms" || "kilos")) {
+  } else if (weightInput == "kg" || "kilograms" || "kilos") {
         std::cout << "Enter in your weight (kg):\n";
-   		std::cin >> weight;
+   	  	std::cin >> weight;
      	
         std::cout << "Do you use feet or metres/meters as a height measurement?\n";
         std::cin >> heightInput;
     
           // Ft Version
 
-    	  if (heightInput.toLowerCase() == ("feet" || "f" || "ft")) {
+    	  if (heightInput == "feet" || "f" || "ft") {
 
                     std::cout << "Enter in your height (ft):\n";
                     std::cin >> height;
@@ -73,7 +75,7 @@ int main() {
 
             // M Version
 
-          } if else (heightInput.toLowerCase() == ("m" || "metres" || "meters")){
+          } else if (heightInput == "m" || "metres" || "meters"){
 
                     std::cout << "Enter in your height (m):\n";
                     std::cin >> height;
@@ -95,7 +97,7 @@ int main() {
     std::cout << "Invalid input. Supported terms:\n p\n pounds\n lbs\n\n kg\n kilograms\n kilos\n";
   }
   
-return 0;
+
 
   /*
   // Ask user for their height
@@ -115,5 +117,13 @@ return 0;
   return 0;
 
 */
-
 }
+
+int bruh() {
+
+  int password;
+
+  std::cout << "Enter password: \n";
+  std::cin >> password;
+}
+
